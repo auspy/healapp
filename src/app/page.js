@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image"
 
 export default function Home(){
   return (
@@ -37,8 +37,8 @@ export default function Home(){
 <div className='containers flex flex-col justify-center'>
   <h1 className='header'>Professional Care</h1>
   <div className='flex'>
-  <h1 className='header'>with a personal touch</h1>
-  <h2 className='full'>.</h2>
+  <h1 className='header'>with a personal touch<span className="full">.</span></h1>
+  
   </div> 
   <p>A group of independent surgeons each with different speciality.</p>
   <div className='buttons flex'>
@@ -58,31 +58,119 @@ export default function Home(){
 <div className='second_containers bg-primary-focus'>
   <div className='containers flex flex-col items-center'>
   <h2 className='subheader'>OUR DOCTORS</h2>
-  <h1 className='header'>Our <span className='qualified'>highly qualified</span> doctors</h1>
-  <div className="carousel rounded-box">
-  <div className="carousel-item">
-    <img src= {Image} alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src={Image} alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
+  <h1 className='header mb-10'>Our <span className='qualified'>highly qualified</span> doctors</h1>
+ 
+
+  <div className="carousel rounded-box w-[70%]">
+
+   
+
+  <div className="carousel-item ml-10 ">
+  <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+    <div className="cards flex">
+    <figure><Image id= "image" src="/download.jpg" alt="im" height="200" width="200"></Image></figure>
+    <div className="cards flex flex-col w-48 justify-center items-center">
+      <h1>MBBS</h1>
+      <h1>MD</h1>
+    </div>
+
+    </div>
+  <div className="card-body">
+    <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+    <div className="specialization-container flex">
+      <div className="badge badge-secondary mr-2">Spine</div>
+      <div className="badge badge-secondary mr-2">Spine</div>
+    </div>
+    <p>lorem ipsum dolor sit aet god knows what...</p>
+    <div className="card-actions">
+    <button className="btn btn-primary"><Image src="/call.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/doc.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/search.png" height="20" width="20"></Image></button>
+    </div>
   </div>
 </div>
+  
+  </div> 
+  <div className="carousel-item ml-10 ">
+  <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+    <div className="cards flex">
+    <figure><Image id= "image" src="/download.jpg" alt="im" height="200" width="200"></Image></figure>
+    <div className="cards flex flex-col w-48 justify-center items-center">
+      <h1>MBBS</h1>
+      <h1>MD</h1>
+    </div>
 
+    </div>
+  <div className="card-body">
+    <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+    <div className="specialization-container flex">
+      <div className="badge badge-secondary mr-2">Spine</div>
+      <div className="badge badge-secondary mr-2">Spine</div>
+    </div>
+    <p>lorem ipsum dolor sit aet god knows what...</p>
+    <div className="card-actions">
+    <button className="btn btn-primary"><Image src="/call.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/doc.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/search.png" height="20" width="20"></Image></button>
+    </div>
+  </div>
+</div>
+  
+  </div> 
+  <div className="carousel-item ml-10 ">
+  <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+    <div className="cards flex">
+    <figure><Image id= "image" src="/download.jpg" alt="im" height="200" width="200"></Image></figure>
+    <div className="cards flex flex-col w-48 justify-center items-center">
+      <h1>MBBS</h1>
+      <h1>MD</h1>
+    </div>
+
+    </div>
+  <div className="card-body">
+    <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+    <div className="specialization-container flex">
+      <div className="badge badge-secondary mr-2">Spine</div>
+      <div className="badge badge-secondary mr-2">Spine</div>
+    </div>
+    <p>lorem ipsum dolor sit aet god knows what...</p>
+    <div className="card-actions">
+    <button className="btn btn-primary"><Image src="/call.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/doc.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/search.png" height="20" width="20"></Image></button>
+    </div>
+  </div>
+</div>
+  
+  </div> 
+  <div className="carousel-item ml-10 ">
+  <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+    <div className="cards flex">
+    <figure><Image id= "image" src="/download.jpg" alt="im" height="200" width="200"></Image></figure>
+    <div className="cards flex flex-col w-48 justify-center items-center">
+      <h1>MBBS</h1>
+      <h1>MD</h1>
+    </div>
+
+    </div>
+  <div className="card-body">
+    <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+    <div className="specialization-container flex">
+      <div className="badge badge-secondary mr-2">Spine</div>
+      <div className="badge badge-secondary mr-2">Spine</div>
+    </div>
+    <p>lorem ipsum dolor sit aet god knows what...</p>
+    <div className="card-actions">
+    <button className="btn btn-primary"><Image src="/call.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/doc.png" height="20" width="20"></Image></button>
+    <button className="btn btn-primary"><Image src="/search.png" height="20" width="20"></Image></button>
+    </div>
+  </div>
+</div>
+  
+  </div> 
+ 
+</div>
   
   </div>
   

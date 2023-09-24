@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .full{
-  color: blue;
-  font-size: 20px;
+  color: rgb(100,26,230);
+  font-size: 40px;
 }
 .containers{
   height: 98vh;
@@ -28,4 +28,7 @@ button{
 }
 .qualified{
   font-weight: bold;
+}
+#image{
+  overflow: hidden;
 }
