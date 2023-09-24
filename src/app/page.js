@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Colors from "./colors";
 import { useState } from "react";
-
+import { Montserrat } from "next/font/google";
+const mont = Montserrat({ subsets: ["latin"] });
 export default function Home() {
   const [email, setEmail] = useState("");
   return (
@@ -69,7 +70,7 @@ export default function Home() {
               </div>
               <a
                 id="logo"
-                className=" text-xl"
+                className={`${mont.className} text-xl`}
                 style={{
                   letterSpacing: 3.92,
                 }}
@@ -186,49 +187,166 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div className="second_ bg-primary-focus">
-        <div className=" flex flex-col items-center">
+      {/* section 2 */}
+      {/* <div className="second_containers bg-primary-focus">
+        <div className="containers flex flex-col items-center">
           <h2 className="subheader">OUR DOCTORS</h2>
-          <h1 className="header">
+          <h1 className="header mb-10">
             Our <span className="qualified">highly qualified</span> doctors
           </h1>
-          <div className="carousel rounded-box">
-            <div className="carousel-item">
-              <img src={Image} alt="Burger" />
+
+          <div className="carousel rounded-box w-[70%]">
+            <div className="carousel-item ml-10 ">
+              <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+                <div className="cards flex">
+                  <figure>
+                    <Image
+                      id="image"
+                      src="/download.jpg"
+                      alt="im"
+                      height="200"
+                      width="200"
+                    ></Image>
+                  </figure>
+                  <div className="cards flex flex-col w-48 justify-center items-center">
+                    <h1>MBBS</h1>
+                    <h1>MD</h1>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+                  <div className="specialization-container flex">
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                  </div>
+                  <p>lorem ipsum dolor sit aet god knows what...</p>
+                  <div className="card-actions">
+                    <button className="btn btn-primary">
+                      <Image src="/call.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/doc.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/search.png" height="20" width="20"></Image>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src={Image} alt="Burger" />
+            <div className="carousel-item ml-10 ">
+              <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+                <div className="cards flex">
+                  <figure>
+                    <Image
+                      id="image"
+                      src="/download.jpg"
+                      alt="im"
+                      height="200"
+                      width="200"
+                    ></Image>
+                  </figure>
+                  <div className="cards flex flex-col w-48 justify-center items-center">
+                    <h1>MBBS</h1>
+                    <h1>MD</h1>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+                  <div className="specialization-container flex">
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                  </div>
+                  <p>lorem ipsum dolor sit aet god knows what...</p>
+                  <div className="card-actions">
+                    <button className="btn btn-primary">
+                      <Image src="/call.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/doc.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/search.png" height="20" width="20"></Image>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img
-                src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                alt="Burger"
-              />
+            <div className="carousel-item ml-10 ">
+              <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+                <div className="cards flex">
+                  <figure>
+                    <Image
+                      id="image"
+                      src="/download.jpg"
+                      alt="im"
+                      height="200"
+                      width="200"
+                    ></Image>
+                  </figure>
+                  <div className="cards flex flex-col w-48 justify-center items-center">
+                    <h1>MBBS</h1>
+                    <h1>MD</h1>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+                  <div className="specialization-container flex">
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                  </div>
+                  <p>lorem ipsum dolor sit aet god knows what...</p>
+                  <div className="card-actions">
+                    <button className="btn btn-primary">
+                      <Image src="/call.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/doc.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/search.png" height="20" width="20"></Image>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img
-                src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                alt="Burger"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-                alt="Burger"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                alt="Burger"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-                alt="Burger"
-              />
+            <div className="carousel-item ml-10 ">
+              <div className="card w-96 bg-base-100 shadow-xl overflow-hidden">
+                <div className="cards flex">
+                  <figure>
+                    <Image
+                      id="image"
+                      src="/download.jpg"
+                      alt="im"
+                      height="200"
+                      width="200"
+                    ></Image>
+                  </figure>
+                  <div className="cards flex flex-col w-48 justify-center items-center">
+                    <h1>MBBS</h1>
+                    <h1>MD</h1>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <h2 className="card-title">Dr. Phunsukh Wangdu</h2>
+                  <div className="specialization-container flex">
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                    <div className="badge badge-secondary mr-2">Spine</div>
+                  </div>
+                  <p>lorem ipsum dolor sit aet god knows what...</p>
+                  <div className="card-actions">
+                    <button className="btn btn-primary">
+                      <Image src="/call.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/doc.png" height="20" width="20"></Image>
+                    </button>
+                    <button className="btn btn-primary">
+                      <Image src="/search.png" height="20" width="20"></Image>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
