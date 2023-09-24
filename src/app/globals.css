@@ -1,11 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;500;600;700&display=swap");
 :root {
   --lGreen: #e4f5f2;
   --green: #05c5a1;
   --purple: #6c20dd;
+}
+#logo {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-transform: uppercase;
+}
+.mont {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: var(--lGreen);
+  font-family: "Raleway", "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * {
@@ -17,17 +41,11 @@
   color: blue;
   font-size: 20px;
 }
-.containers {
-  height: 98vh;
-  width: 100%;
-  margin-left: 25px;
-}
 .header {
   font-size: 40px;
 }
 button {
   margin-top: 15px;
-  margin-right: 15px;
 }
 .subheader {
   color: white;
