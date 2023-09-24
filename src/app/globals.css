@@ -10,7 +10,7 @@
 #logo {
   color: #333333;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -23,7 +23,7 @@
 
 body {
   background-color: var(--lGreen);
-  font-family: "Raleway", "Montserrat", sans-serif;
+  font-family: Raleway, Montserrat, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;

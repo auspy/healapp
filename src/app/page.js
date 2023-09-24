@@ -68,6 +68,7 @@ export default function Home() {
                 </ul>
               </div>
               <a
+                id="logo"
                 className=" text-xl"
                 style={{
                   letterSpacing: 3.92,
@@ -112,11 +113,10 @@ export default function Home() {
             <div className="gap-10 flex flex-col justify-center">
               <div className="flex gap-6 flex-col justify-center">
                 <div>
-                  <h1 className="header">Professional Care</h1>
-                  <div className="flex">
-                    <h1 className="header">with a personal touch</h1>
-                    <h2 className="full">.</h2>
-                  </div>
+                  <h1 className="header max-w-[449px]">
+                    Professional Care with a personal touch
+                    <span style={{ color: Colors.green }}>.</span>
+                  </h1>
                 </div>
                 <p>
                   A group of independent surgeons each with different
@@ -135,7 +135,7 @@ export default function Home() {
                     maxLength={50}
                     style={{ backgroundColor: Colors.lGreen }}
                     type="text"
-                    placeholder="Type here"
+                    placeholder="Enter email"
                     className="input input-bordered w-full"
                   />
                   <button
