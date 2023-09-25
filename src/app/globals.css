@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@400;500;600;700&display=swap"); */
 :root {
   --lGreen: #e4f5f2;
   --green: #05c5a1;
@@ -9,7 +9,7 @@
 }
 #logo {
   color: #333333;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
