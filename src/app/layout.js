@@ -1,7 +1,11 @@
+import WatsonBot from "@/components/watsonBot";
 import "./globals.css";
-import { Raleway } from "next/font/google";
+import { Raleway, Montserrat } from "next/font/google";
+import Colors from "./colors";
+import Link from "next/link";
 
 const raleway = Raleway({ subsets: ["latin"] });
+const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -22,7 +26,119 @@ export default function RootLayout({ children }) {
         ></link> */}
         <meta charSet="utf-8" />
       </head>
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <div
+          className=""
+          style={{
+            height: "100vh",
+            width: "100vw",
+            backgroundColor: Colors.lGreen,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingInline: 30,
+          }}
+        >
+          <div
+            className="w-full relative"
+            style={{
+              maxWidth: 1260,
+              flex: 1,
+            }}
+          >
+            <div
+              style={{ position: "absolute", top: 0, zIndex: 2 }}
+              className="navbar"
+            >
+              <div className="navbar-start">
+                <div className="dropdown">
+                  <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                    style={{ backgroundColor: Colors.lGreen }}
+                  >
+                    <li>
+                      <a>Home</a>
+                    </li>
+                    <li>
+                      <a>About us</a>
+                    </li>
+                    <li>
+                      <a>Surgeons</a>
+                    </li>
+                    <li>
+                      <a>Specialities</a>
+                    </li>
+                    <li>
+                      <a>Reviews</a>
+                    </li>
+                  </ul>
+                </div>
+                <Link
+                  href={"/"}
+                  id="logo"
+                  className={`hover:cursor-pointer ${mont.className} text-xl`}
+                  style={{
+                    letterSpacing: 3.92,
+                  }}
+                >
+                  HEAL<span style={{ color: Colors.green }}>PAL</span>
+                </Link>
+              </div>
+              <div className="navbar-center hidden lg:flex">
+                <ul className="menu menu-horizontal px-1">
+                  <li>
+                    <Link href={"/"}>Home</Link>
+                  </li>
+                  <li>
+                    <a>About us</a>
+                  </li>
+                  <li>
+                    <a>Surgeons</a>
+                  </li>
+                  <li>
+                    <a>Specialities</a>
+                  </li>
+                  <li>
+                    <a>Reviews</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="navbar-end">
+                <Link
+                  href={"/contactus"}
+                  className="btn btn-primary hover:cursor-pointer"
+                  style={{
+                    backgroundColor: Colors.green,
+                    border: "unset",
+                    boxShadow: "0px 10px 10px 0px rgba(7, 187, 152, 0.15)",
+                  }}
+                >
+                  Talk To Us
+                </Link>
+              </div>
+            </div>
+            {children}
+          </div>
+        </div>
+        <WatsonBot />
+      </body>
     </html>
   );
 }
