@@ -36,18 +36,19 @@ export default function RootLayout({ children }) {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingInline: 30,
+          
+
           }}
         >
           <div
-            className="w-full relative"
+            className="w-full "
             style={{
-              maxWidth: 1260,
+        
               flex: 1,
             }}
           >
             <div
-              style={{ position: "absolute", top: 0, zIndex: 2 }}
+              style={{ top: 0 }}
               className="navbar"
             >
               <div className="navbar-start">
@@ -73,21 +74,21 @@ export default function RootLayout({ children }) {
                     className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                     style={{ backgroundColor: Colors.lGreen }}
                   >
-                    <li>
-                      <a>Home</a>
-                    </li>
-                    <li>
-                      <a>About us</a>
-                    </li>
-                    <li>
-                      <a>Surgeons</a>
-                    </li>
-                    <li>
-                      <a>Specialities</a>
-                    </li>
-                    <li>
-                      <a>Reviews</a>
-                    </li>
+                 <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#second">Surgeons</a>
+                  </li>
+                  <li>
+                    <a href="#third">Specialities</a>
+                  </li>
+                  <li>
+                    <a href="#fourth">Reviews</a>
+                  </li>
                   </ul>
                 </div>
                 <Link
@@ -107,17 +108,17 @@ export default function RootLayout({ children }) {
                     <Link href={"/"}>Home</Link>
                   </li>
                   <li>
-                    <a>About us</a>
+                    <a href="#">About us</a>
                   </li>
                   <li>
-                    <a>Surgeons</a>
-                  </li>
-                  <li>
-                    <a>Specialities</a>
-                  </li>
-                  <li>
-                    <a>Reviews</a>
-                  </li>
+                  <a href="#second">Surgeons</a>
+                </li>
+                <li>
+                  <a href="#third">Specialities</a>
+                </li>
+                <li>
+                  <a href="#fourth">Reviews</a>
+                </li>
                 </ul>
               </div>
               <div className="navbar-end">
@@ -128,6 +129,8 @@ export default function RootLayout({ children }) {
                     backgroundColor: Colors.green,
                     border: "unset",
                     boxShadow: "0px 10px 10px 0px rgba(7, 187, 152, 0.15)",
+                    color:"#fff",
+                    marginRight:"20px"
                   }}
                 >
                   Talk To Us
